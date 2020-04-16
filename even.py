@@ -16,6 +16,9 @@ if __name__ == '__main__':
 def test_check_even():
     #cmd to run this test
     #python3 -c 'import even; even.test_check_even()'
+    assert check_even(0) == True
     assert check_even(2) == True
+    assert check_even(-2) == True
     assert check_even(3) == False
+    assert check_even(-3) == False
     

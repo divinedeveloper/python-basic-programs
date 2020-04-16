@@ -16,5 +16,8 @@ if __name__  == '__main__':
 def test_check_odd():
     #cmd to run this test
     #python3 -c 'import odd; odd.test_check_odd()'
+    assert check_odd(0) == False
     assert check_odd(1) == True
+    assert check_odd(-1) == True
     assert check_odd(2) == False
+    assert check_odd(-2) == False
