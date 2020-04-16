@@ -3,12 +3,12 @@ def check_even(n):
         print(f'{n} is even')
         return True
     else:
-        print(f'{n} is odd')
+        print(f'{n} is not even')
         return False
 
 if __name__ == '__main__':
     try:
-        n = int(input('Enter number to check if it is even or odd: '))
+        n = int(input('Enter number to check if it is even or not: '))
         check_even(n) 
     except ValueError as e:
         print('Please provide only integer numbers')
